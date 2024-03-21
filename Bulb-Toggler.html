@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb-On-Off-Toggler</title>
+    <style>
+        body{
+            background-color: rgb(224, 233, 233);
+        }
+  .img{
+    height:400px;
+    width:400px;
+
+
+  }
+.container{
+    height:500px;
+    padding:40px;
+    width:400px;
+    margin:100px auto;
+    box-shadow:0 0 20px rgba(0 , 0 , 0, 0.2);
+    background-color: #ffff;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+   
+
+button{
+  height:50px;
+  padding:20px ;
+  width:100px;
+  border: none;
+  margin: 20px ;
+  border-radius: 50px;
+  justify-content: center;
+    text-align: center;
+ 
+}
+.btn1{
+    background-color: rgb(27, 228, 27);
+    color: #ffff;
+
+
+}
+.btn2{
+    background-color: red;
+    color: #ffff;
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <img src="bulb-off.png" alt="off" id="bulb" class="img">
+    <br> <br>
+   
+    <button  class="btn1" type="button" onclick="bulbOn()">
+       <b > ON</b>
+    </button>
+    <button class="btn2" type="button" onclick="bulbOff()">
+        <b >  OFF</b>
+    </button>
+
+    </div>
+
+    <script>
+        const bulbElement = document.getElementById('bulb');
+        function bulbOn() {
+            bulbElement.src = "bulb-on.png";
+        }
+        function bulbOff() {
+            bulbElement.src = "bulb-off.png";
+        }
+    </script>
+</body>
+</html>
