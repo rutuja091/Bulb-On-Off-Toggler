@@ -6,7 +6,7 @@
     <title>Bulb-On-Off-Toggler</title>
     <style>
         body{
-            background-color: rgb(224, 233, 233);
+            background: linear-gradient(to bottom, #33ccff 0%, #ffcccc 100%);
         }
   .img{
     height:400px;
@@ -32,15 +32,25 @@
 button{
   height:50px;
   padding:20px ;
-  width:100px;
+  width:150px;
   border: none;
   margin: 20px ;
   border-radius: 50px;
   justify-content: center;
-    text-align: center;
+  text-align: center;
+  background-color: black;
+  color: #ffff;
+  font-size: 15px;
  
 }
-.btn1{
+button:hover{
+    background-color:#ffff;
+    border:2px solid black;
+    color:black;
+    font-size: 15px;
+ 
+}
+/*.btn1{
     background-color: rgb(27, 228, 27);
     color: #ffff;
 
@@ -50,7 +60,7 @@ button{
     background-color: red;
     color: #ffff;
 
-}
+}*/
     </style>
 </head>
 
@@ -65,11 +75,10 @@ button{
     <button class="btn2" type="button" onclick="bulbOff()">
         <b >  OFF</b>
     </button>
-
     </div>
 
     <script>
-        const bulbElement = document.getElementById('bulb');
+         const bulbElement = document.getElementById('bulb');
         function bulbOn() {
             bulbElement.src = "bulb-on.png";
         }
